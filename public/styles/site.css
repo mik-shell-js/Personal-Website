@@ -1,0 +1,434 @@
+/* General Typography and Body Settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2cc2b8; /* Light teal background */
+    color: #333333; /* Dark grey for body text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Styling */
+header {
+    position: relative;
+    background-color: #ff6f61;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px solid #008080; /* Teal border at the bottom */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+}
+
+.active {
+    background-color: #1d4ed8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a; /* Dark blue background */
+    color: white;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 15px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+
+}
+
+nav ul li {
+   list-style: none;
+   margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff; 
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    color: #ff6f61;
+    background-color: #172554;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
+
+/* Introduction Section */
+section#intro {
+    background-color: #f3f3f3;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 6px solid #ff6f61; /* Hot pink left border */
+}
+
+section#intro h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #008080; /* Teal for section title */
+}
+
+section#intro p {
+    font-size: 16px;
+    color: #666666; /* Light grey for body text */
+    font-weight: 400;
+}
+
+figure {
+    margin: 20px auto;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling for image captions */
+figcaption {
+    font-family: 'Montserrat', sans-serif; /* Matches the font used across the site */
+    font-size: 14px; /* Small but readable font size */
+    color: #005f73; /* Dark teal for consistency with the theme */
+    text-align: center; /* Centers the caption below the image */
+    margin-top: 10px; /* Adds space between the image and caption */
+    background-color: #ffffff; /* White background for better contrast */
+    padding: 10px; /* Adds padding around the text */
+    border-radius: 10px; /* Rounded corners to fit the site's style */
+    border: 3px solid transparent; /* Transparent initial border */
+    background-image: linear-gradient(#80f7ff, #ffffff, #80f7ff), /* Teal and White Gradient*/
+                      linear-gradient(120deg, #ff6f61, #008080, #ff4500); /* Gradient border */
+    background-origin: border-box;
+    background-clip: padding-box, border-box; /* Ensures the gradient stays on the border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the caption off the page */
+    max-width: 90%; /* Ensures caption fits well below smaller images */
+    margin-left: auto;
+    margin-right: auto; /* Centers the caption block */
+}
+
+/* Featured Content Section */
+section#featured-content {
+    background-color: #80f7ff; /* Light teal background */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    border: 2px solid #008080; /* Teal border */
+}
+
+section#featured-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #005f73; /* Dark teal */
+    text-align: center;
+}
+
+section#featured-content article {
+    margin-bottom: 20px;
+}
+
+section#featured-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #ff6f61; /* Hot pink/fuchsia for titles */
+}
+
+section#featured-content p {
+    font-size: 16px;
+    color: #666666; /* Light grey for text */
+}
+
+section#featured-content a {
+    color: #ff6f61;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section#featured-content a:hover {
+    text-decoration: underline;
+    color: #008080; /* Teal on hover */
+}
+
+/* Call to Action Section */
+section#call-to-action {
+    background-color: #ff6f61; /* Hot pink/fuchsia background */
+    color: black; /* Black text for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+section#call-to-action h2 {
+    font-size: 24px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section#call-to-action p {
+    font-size: 18px;
+    color: black;
+}
+
+section#call-to-action .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #084e4e; /* Teal button */
+    color: #FFD700;
+    text-decoration: underline;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+section#call-to-action .cta-button:hover {
+    background-color: #005f73; /* Dark teal on hover */
+}
+
+/* Style for all images */
+img {
+    max-width: 100%; /* Ensures the image scales down for mobile devices */
+    height: auto;
+    border-radius: 15px; /* Matches the border-radius of the content box */
+    display: block;
+    margin: 20px auto; /* Centers images */
+    padding: 5px; /* Padding to separate the image from its gradient border */
+    background: #ffffff; /* White background inside the gradient */
+    border: 3px solid transparent; /* Initial border */
+    background-image: linear-gradient(120deg, #ff6f61, #008080, #ff4500); /* Gradient border */
+    background-clip: padding-box, border-box; /* Ensures gradient wraps around the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* General styling for sections */
+section {
+    margin: 40px auto;
+    max-width: 900px; /* Adjusts width for better spacing on larger screens */
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Wrapper for heading h1) */
+.content-heading {
+    position: relative;
+    margin-top: 0;
+    background-color: #80f7ff;
+    border-radius: 15px;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#80f7ff, #ffffff, #80f7ff), /* Teal and White Gradient*/
+                      linear-gradient(120deg, #ff6f61, #008080, #ff4500);
+    background-clip: content-box, border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-heading h2, .content-heading h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #005f73; /* Dark teal for headers */
+    margin: 0;
+}
+
+/* Wrapper for paragraphs (p) */
+.content-paragraph {
+    background-color: #80f7ff;
+    border-radius: 15px;
+    border: 4px solid transparent;
+    background-image: linear-gradient(#80f7ff, #ffffff, #ffffff, #80f7ff, #ffffff, #ffffff, #80f7ff), /* Teal and White Gradient*/
+                      linear-gradient(120deg, #ff6f61, #008080, #ff4500);
+    background-clip: content-box, border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333333; /* Dark grey for text */
+}
+
+/* Wrapper for images */
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    background: #80f7ff;
+    border: 3px solid transparent;
+    background-image: linear-gradient(120deg, #ff6f61, #008080, #ff4500);
+    background-clip: padding-box, border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for modern look */
+}
+
+/* Wrapper for image captions */
+.content-figcaption {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Section Divider (Bar) Styling (added this to help separate decorative images in the blog post section from content images and articles*/
+.section-bar {
+    height: 5px; /* Thickness of the bar */
+    width: 80%; /* Width of the bar */
+    background-image: linear-gradient(120deg, #ff6f61, #008080, #ff4500); /* Gradient colors */
+    margin: 40px auto; /* Centers the bar and adds vertical spacing */
+    border-radius: 10px; /* Rounded edges for a smoother look */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern touch */
+}
+
+
+/* Styling for the hamburger icon */
+/* .nav-toggle-label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    margin: 10px auto;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    background-color: #80f7ff; Modern Teal color */
+    /* width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-label span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-toggle-label span::before {
+    top: -10px;
+}
+
+.nav-toggle-label span::after {
+    top: 10px;
+} */
+
+/* Toggle the menu on when the checkbox is checked */
+/* .nav-toggle:checked + .nav-toggle-label span {
+    background: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
+} */
+
+/* .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+    display: flex; /* Display menu when toggled */
+/* } */
+
+/* Hide checkbox (used for toggling) */
+/* .nav-toggle {
+    display: none;
+} */
+
+/* Footer Styling */
+footer {
+    background-color: #333333; /* Dark grey for footer */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 4px solid #ff6f61; /* Hot pink border at the top */
+}
+
+footer p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: #008080; /* Teal links in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6f61; /* Hot pink on hover */
+}
+
+footer {
+    color: #FFFFFF; /* White text */
+    background-color: #333333; /* Dark gray background */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+footer a {
+    color: #f3d110; /* Gold for links */
+    text-decoration: underline;
+}
