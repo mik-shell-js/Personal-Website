@@ -1,13 +1,8 @@
-import Footer from "../components/Footer";
-import NavigationMenu from "../components/NavigationMenu";
-
 export default function Contact() {
   return (
     <>
         {/* <!-- Header Section --> */}
         <header>
-            {/* Navigation Menu */}
-            <NavigationMenu />
             <div className="content-heading">
                 <h1>Contact Me</h1>
             </div>
@@ -37,9 +32,6 @@ export default function Contact() {
         </section>
 
         <div className="section-bar"></div>
-
-        {/* <!-- Footer Section --> */}
-        <Footer />
     </>
   );
 }

@@ -1,13 +1,8 @@
-import Footer from "../components/Footer";
-import NavigationMenu from "../components/NavigationMenu";
-
 export default function Skating() {
     return (
       <>
           {/* Header Section */}
           <header>
-            {/* Navigation Menu */}
-            <NavigationMenu />
             <div className="content-heading">
               <h1>Skateboarding &amp; Tech</h1>
             </div>
@@ -63,8 +58,6 @@ export default function Skating() {
             </article>
           </section>
           <div className="section-bar" />
-          {/* Footer Section */}
-          <Footer />
       </>
     );
   }

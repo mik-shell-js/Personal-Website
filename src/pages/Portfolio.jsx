@@ -1,13 +1,8 @@
-import Footer from "../components/Footer";
-import NavigationMenu from "../components/NavigationMenu";
-
 export default function Portfolio() {
     return (
       <>
         {/* <!-- Header Section --> */}
         <header>
-            {/* Navigation Menu */}
-            <NavigationMenu />
             <div className="content-heading">
                 <h1>Portfolio</h1>
             </div>
@@ -64,9 +59,6 @@ export default function Portfolio() {
         </section>
 
         <div className="section-bar"></div>
-
-        {/* <!-- Footer Section --> */}
-        <Footer />
       </>
     );
   }
