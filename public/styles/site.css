@@ -18,7 +18,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
 }
 
-.active {
+/* .active {
     background-color: #1d4ed8;
 }
 
@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a; /* Dark blue background */
+    background-color: #0f172a; 
     color: white;
     position: sticky;
     top: 0;
@@ -110,7 +110,7 @@ nav .menu span {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     }
-}
+} */
 
 /* Introduction Section */
 section#intro {
